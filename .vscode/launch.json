@@ -1,0 +1,24 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "run_llava",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/data/psh68380/repos/LLaVA-NeXT/run_llava-vid_for_videocbm.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--model_path", "lmms-lab/LLaVA-NeXT-Video-7B-Qwen2",
+                "--conv_mode", "qwen_1_5",
+                "--answer_folder", "cbm_concepts/k100_temporal2",
+                "--descriptor_type", "temporal",
+                "--temperature", "0",
+                "--max_new_tokens", "512",
+                "--query", "Please provide a brief description of the video content."
+            ]
+        }
+    ]
+}

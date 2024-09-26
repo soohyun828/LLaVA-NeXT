@@ -9,13 +9,14 @@ dist
 *.log.*
 # *.json
 # *.jsonl
+*.err
+*.out
 
 # Data
 !**/alpaca-data-conversation.json
 # Editor
 .idea
 *.swp
-.vscode
 
 # Other
 .DS_Store
@@ -71,3 +72,4 @@ playground/*.json
 mlx_configs/
 data_processing/
 # demo/
+cbm_concepts/

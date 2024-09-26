@@ -451,7 +451,14 @@ You are a helpful assistant.""",
     sep="<|im_end|>",
 )
 
-conv_gemma_instruct = Conversation(system="", roles=("<start_of_turn>user\n", "<start_of_turn>model\n"), version="gemma", messages=[], offset=0, sep_style=SeparatorStyle.GEMMA, sep="<end_of_turn>\n")
+conv_gemma_instruct = Conversation(
+    system="", 
+    roles=("<start_of_turn>user\n", "<start_of_turn>model\n"), 
+    version="gemma", 
+    messages=[], 
+    offset=0, 
+    sep_style=SeparatorStyle.GEMMA, 
+    sep="<end_of_turn>\n")
 
 conv_llava_plain = Conversation(
     system="",
